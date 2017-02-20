@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+>
+        <Button
+            android:id="@+id/btn_request_get"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get方式请求网络"
+            android:textSize="22sp" />
+        <Button
+            android:id="@+id/btn_request_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Post方式请求网络"
+            android:textSize="22sp" />
+        <Button
+            android:id="@+id/btn_request_post_params"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Post带参数访问网络"
+            android:textSize="22sp" />
+        <Button
+            android:id="@+id/btn_request_upload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="上传"
+            android:textSize="22sp" />
+        <Button
+            android:id="@+id/btn_request_down"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="下载"
+            android:textSize="22sp" />
+
+        <ProgressBar
+            android:id="@+id/pb_download"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:progressDrawable="@drawable/process"
+            android:max="100"
+            />
+        <ImageView
+            android:id="@+id/iv_compress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <EditText
+            android:id="@+id/et_showresposetext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="我是用来战是从网络获取到的信息"
+            android:textSize="16sp"
+            />
+
+    </LinearLayout>
+</ScrollView>
